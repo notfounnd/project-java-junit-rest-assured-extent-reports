@@ -33,6 +33,11 @@ jobs:
     - name: Copy report file
       run: cp ./modules/target/report/${{env.REPORT_FILE}} .
 
+    - uses: actions/upload-artifact@v4
+      with:
+        name: ${{env.REPORT_FILE}}
+        path: ${{env.REPORT_FILE}}
+
     - name: Test report
       uses: pavi2410/html-preview-action@v4
       with:
