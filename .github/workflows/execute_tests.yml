@@ -34,6 +34,7 @@ jobs:
       run: cp ./modules/target/report/${{env.REPORT_FILE}} .
 
     - uses: actions/upload-artifact@v4
+      name: Generate artifact
       with:
         name: ${{env.REPORT_FILE}}
         path: ${{env.REPORT_FILE}}
