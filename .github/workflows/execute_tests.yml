@@ -25,10 +25,10 @@ jobs:
         cache: maven
         
     - name: Run - FullSuiteRunner tests
-      run: mvn clean test -am -amd -Dtest=FullSuiteRunner -Denv=DEV | exit 0
+      run: mvn clean test -am -amd -Dtest=FullSuiteRunner -Denv=DEV || exit 0
 
     - name: Export report path
-      run: ls modules/target/report/ >> $REPORT_FILE
+      run: echo "REPORT_FILE=$(ls modules/target/report/)" >> $GITHUB_ENV
 
     - name: Test report
       uses: pavi2410/html-preview-action@v4
