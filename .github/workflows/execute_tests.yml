@@ -30,8 +30,11 @@ jobs:
     - name: Export report path
       run: echo "REPORT_FILE=$(ls modules/target/report/)" >> $GITHUB_ENV
 
+    - name: Copy report file
+      run: cp ./modules/target/report/${{env.REPORT_FILE}} .
+
     - name: Test report
       uses: pavi2410/html-preview-action@v4
       with:
-        html_file: ./modules/target/report/${{ env.REPORT_FILE }}
+        html_file: ${{env.REPORT_FILE}}
         job_summary: true
