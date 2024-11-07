@@ -9,11 +9,13 @@ on:
 
 jobs:
 
-  tests:
+  execute_tests:
+    name: Execute tests
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v4
+    - name: Checkout
+      uses: actions/checkout@v4
     
     - name: Set up JDK 21
       uses: actions/setup-java@v4
@@ -22,5 +24,5 @@ jobs:
         distribution: 'temurin'
         cache: maven
         
-    - name: Run tests
+    - name: Run - FullSuiteRunner tests
       run: mvn clean test -am -amd -Dtest=FullSuiteRunner -Denv=DEV
