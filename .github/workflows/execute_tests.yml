@@ -33,5 +33,5 @@ jobs:
     - name: Test report
       uses: pavi2410/html-preview-action@v4
       with:
-        html_file: modules/target/report/${{ env.REPORT_FILE }}
+        html_file: ./modules/target/report/${{ env.REPORT_FILE }}
         job_summary: true
