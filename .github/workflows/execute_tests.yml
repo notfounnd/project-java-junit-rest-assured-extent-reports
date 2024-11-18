@@ -23,9 +23,12 @@ jobs:
         java-version: '21'
         distribution: 'temurin'
         cache: maven
-        
-    - name: Run - FullSuiteRunner tests
-      run: mvn clean test -am -amd -Dtest=FullSuiteRunner -Denv=DEV || exit 0
+
+    - name: Run - ArchTestsSuiteRunner tests
+      run: mvn clean test -am -amd -Dtest=ArchTestsSuiteRunner -Denv=DEV
+
+    - name: Run - FullTestsSuiteRunner tests
+      run: mvn clean test -am -amd -Denv=DEV -Dtest=FullTestsSuiteRunner || exit 0
 
     - name: Export report path
       run: echo "REPORT_FILE=$(ls modules/target/report/)" >> $GITHUB_ENV
