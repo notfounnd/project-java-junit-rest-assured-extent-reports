@@ -13,8 +13,8 @@ Projeto base de exemplo para automações de testes em camada de serviço desenv
 
 ```
 📦 test-service-architecture-example
-├──	📜 .gitignore
-├──	📜 README.md
+├── 📜 .gitignore
+├── 📜 README.md
 ├── 📜 pom.xml
 ├── 📂 core
 |	├── 📜 pom.xml
