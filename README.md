@@ -162,7 +162,7 @@ Toda configuração base do projeto de exemplo já esta realizada, não sendo ne
 
 #### JUnit
 
-O [JUnit](command:_cody.vscode.open?"https%3A%2F%2Fjunit.org%2Fjunit4%2F") é um framework de testes unitários para Java que oferece recursos robustos para organização e execução de testes automatizados. Através de suas anotações (@Test, @Before, @After), permite estruturar os testes de forma clara e executá-los de maneira controlada.
+O [JUnit](https://junit.org/) é um framework de testes unitários para Java que oferece recursos robustos para organização e execução de testes automatizados. Através de suas anotações (@Test, @Before, @After), permite estruturar os testes de forma clara e executá-los de maneira controlada.
 
 No projeto, é utilizado principalmente para organização das suítes de teste (@RunWith, @SuiteClasses) e gerenciamento do ciclo de vida dos testes com recursos como @BeforeClass e @AfterClass.
 
@@ -174,15 +174,15 @@ No projeto, é utilizado para garantir que a estrutura do código siga os padrõ
 
 #### Rest Assured
 
-O [Rest Assured](command:_cody.vscode.open?"https%3A%2F%2Frest-assured.io%2F") é uma biblioteca Java que simplifica o processo de teste de APIs REST. Oferece uma DSL fluente para construção de requisições HTTP, permitindo validar respostas, headers, status codes e corpo das mensagens de forma intuitiva e expressiva.
+O [Rest Assured](https://rest-assured.io/) é uma biblioteca Java que simplifica o processo de teste de APIs REST. Oferece uma DSL fluente para construção de requisições HTTP, permitindo validar respostas, headers, status codes e corpo das mensagens de forma intuitiva e expressiva.
 
 #### JSON Schema Validator
 
-O [JSON Schema Validator](command:_cody.vscode.open?"https%3A%2F%2Fjson-schema.org%2F") é uma ferramenta que permite validar a estrutura e formato de arquivos JSON contra um esquema predefinido. Com ele, é possível garantir que os dados JSON retornados pela API estejam em conformidade com a estrutura esperada, validando tipos de dados, formatos, campos obrigatórios e regras de validação customizadas.
+O [JSON Schema Validator](https://mvnrepository.com/artifact/io.rest-assured/json-schema-validator) é uma ferramenta que permite validar a estrutura e formato de arquivos JSON contra um esquema predefinido. Com ele, é possível garantir que os dados JSON retornados pela API estejam em conformidade com a estrutura esperada, validando tipos de dados, formatos, campos obrigatórios e regras de validação customizadas.
 
 #### Extent Reports
 
-O [Extent Reports](command:_cody.vscode.open?"https%3A%2F%2Fwww.extentreports.com%2F") é um framework de relatórios que gera documentação detalhada e visualmente atraente dos resultados dos testes. Permite criar relatórios HTML interativos com informações sobre execução, logs, screenshots e métricas de teste, facilitando a análise e acompanhamento dos resultados.
+O [Extent Reports](https://extentreports.com/) é um framework de relatórios que gera documentação detalhada e visualmente atraente dos resultados dos testes. Permite criar relatórios HTML interativos com informações sobre execução, logs, screenshots e métricas de teste, facilitando a análise e acompanhamento dos resultados.
 
 #### Report Portal
 
